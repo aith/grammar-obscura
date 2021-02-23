@@ -105,9 +105,9 @@ let seed = 1111, step = 310;
 function draw() {
     background(000)
     translate(canw/2+tril, canh/2)
-    beat += 1 * sin(frameCount) + 1;
+    beat += ((1 * sin(frameCount)) + 1);
     turtle(axiom);
-    if(beat >= 20) {
+    if(beat >= 30) {
         axiom = genSentence(axiom, dispersion)
         document.getElementById("console").innerHTML = axiom
         document.getElementById("console").innerHTML += axiom
