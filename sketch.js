@@ -1,7 +1,7 @@
 // todo
 // add more rules
 
-let can; let canw = 1600; let canh = 1000;
+let can; let canw = 800; let canh = 600;
 
 let beat = 0;
 let fr = 15;
