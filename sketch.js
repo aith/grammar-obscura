@@ -1,3 +1,6 @@
+// todo
+// add more rules
+
 let can; let canw = 700; let canh = 700;
 
 let beat = 0;
@@ -22,17 +25,22 @@ function preload() {
 }
 
 function setup() {
-    can = createCanvas(canh, canw)
+    can = createCanvas(canh, canw).parent("canvasContainer")
+    // can.center()
     userStartAudio()
     frameRate(fr)
     axiom = genSentence(axiom)
     axiom = genSentence(axiom)
     axiom = genSentence(axiom)
+    axiom = genSentence(axiom)
+    // can.center()
     print(axiom)
     textSize(20)
     translate(canw/2, canh/2)
+    background(000)
     turtle(axiom)
-    document.getElementById("console").innerHTML = axiom
+    document.getElementById("console").innerHTML += axiom
+    select("canvas").elt.getContext("2d").imageSmoothingEnabled = false;
     // createP(axiom)
 }
 
@@ -51,8 +59,9 @@ function genSentence(axiom) {
 var len = 20;
 var height = 50;
 function turtle(axiom) {
+    stroke("white")
+    fill(000)
     calcTriDims(1)
-    background("white")
     let angle = radians(60)
     for(let i = 0; i < axiom.length; i++) {
         let c = axiom.charAt(i)

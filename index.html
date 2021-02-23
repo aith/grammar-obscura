@@ -9,8 +9,43 @@
   <script src="lib/p5.sound.min.js"></script>
   <!-- <script src="square.ttf"></script> -->
   <script src="sketch.js"></script>
-  <div id="console"></div>
+  <style>
+    body {
+        overflow: hidden;
+        line-height: 20px;
+        background-color:black;
+    }
+    .container { 
+      /* border: 50px solid #f00; */
+      /* border-radius: 100px; */
+      /* height:100px; */
+      /* width:100px; */
+      word-break: break-all;
+      white-space: normal;
+      /* display: block; */
+      width: 98%;
+      height: 800px;
+      margin: 0 auto;
+      position: relative;
+      text-align: justify;
+        color:white;
+    }
+   #canvasContainer {
+       clip-path: rect(50%);
+       width: 580px;
+       height: 580px;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%) scale(1);
+   }
+</style>
 </head>
 <body>
+    <div class= "container">
+        <div word-wrap="break-word" display="block" class="hi" id="canvasContainer" style="margin: 10px;"></div>
+        <div id="console">
+        </div>
+    </div>
 </body>
 </html>
