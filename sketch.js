@@ -27,11 +27,11 @@ function preload() {
 
 function setup() {
     can = createCanvas(canw, canh).parent("canvasContainer")
-    // can.center()
+    can.center("horizontal")
     userStartAudio()
     frameRate(fr)
     axiom = genSentence(axiom, 4)
-    can.center()
+    // can.center()
     // print(axiom)
     textSize(20)
     turtle(axiom);
