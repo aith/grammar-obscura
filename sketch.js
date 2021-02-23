@@ -1,7 +1,7 @@
 // todo
 // add more rules
 
-let can; let canw = 1200; let canh = 1000;
+let can; let canw = 1200; let canh = 800;
 
 let beat = 0;
 let fr = 15;
@@ -27,7 +27,7 @@ function preload() {
 
 function setup() {
     can = createCanvas(canw, canh).parent("canvasContainer")
-    can.center("horizontal")
+    can.center()
     userStartAudio()
     frameRate(fr)
     axiom = genSentence(axiom, 4)
