@@ -27,7 +27,7 @@ function preload() {
 
 function setup() {
     can = createCanvas(canw, canh).parent("canvasContainer")
-    can.center()
+    can.center('horizontal')
     userStartAudio()
     frameRate(fr)
     axiom = genSentence(axiom, 4)
